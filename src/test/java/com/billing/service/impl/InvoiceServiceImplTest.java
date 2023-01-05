@@ -94,13 +94,7 @@ public class InvoiceServiceImplTest {
     @Test
     public void shouldThrowExceptionWhenBillExists() {
         String email = "dummy@gmail.com";
-        InvoiceRequest invoiceRequest = new InvoiceRequest(
-                "Semih",
-                "Erkaraca",
-                email,
-                new BigDecimal(100),
-                "Product1",
-                "TR000");
+        InvoiceRequest invoiceRequest = new InvoiceRequest("Semih","Erkaraca",email,new BigDecimal(100),"Product1","TR000");
         Product product1 = Product.builder().id(2L).name("Product2").build();
         Invoice invoice = Invoice.builder()
                 .billNo(invoiceRequest.getBillNo())
