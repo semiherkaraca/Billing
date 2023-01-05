@@ -13,3 +13,5 @@ Here the limit value is given as 200, you can give what you want.
 You can view the urls you can use from the address below after you have the project up and running.
 
 http://localhost:8080/swagger-ui.html#/
+
+Note : When you first start the project, the database and related records will be created. If you stop and run it again, there are some controls in the services because it is recorded in the database and you may get an error.
