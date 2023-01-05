@@ -7,8 +7,8 @@ spring:
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/SmartBilling
-    username: ${DB_USERNAME}
-    password: ${DB_USER_PASSWORD}
+    username: root
+    password: rootpassword
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
