@@ -19,14 +19,14 @@ import java.util.List;
 
 @Component
 @RequiredArgsConstructor
-public class DatabaseLoader { /*implements CommandLineRunner
+public class DatabaseLoader implements CommandLineRunner {
     private final UserService userService;
     private final ProductService productService;
     private final InvoiceService invoiceService;
 
     @Override
     public void run(String... args) throws Exception {
-       User user1 = userService.saveUser(UserDto.builder().name("Semih").lastname("Erkaraca").email("semiherkaraca@windowslive.com").build());
+        User user1 = userService.saveUser(UserDto.builder().name("Semih").lastname("Erkaraca").email("semiherkaraca@windowslive.com").build());
         User user2 = userService.saveUser(UserDto.builder().name("Ali").lastname("Veli").email("aliveli@gmail.com").build());
         User user3 = userService.saveUser(UserDto.builder().name("Kemal").lastname("Kırmızı").email("kemalkirmizi@gmail.com").build());
 
@@ -71,5 +71,5 @@ public class DatabaseLoader { /*implements CommandLineRunner
         System.out.println("------------------------------------");
 
         System.out.println(invoiceService.getReport());
-    }*/
+    }
 }
